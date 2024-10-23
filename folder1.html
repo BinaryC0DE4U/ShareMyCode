@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareMyCode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Game Code - Folder 1</h1>
+        <h2>Name as (index.html)</h2>
+        <pre id="code-snippet">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;link rel="icon" href="icon.ico.ico" type="image/x-icon"&gt;
+    &lt;title&gt;Memory Game&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        
+        &lt;h1&gt;Memory Game&lt;/h1&gt;
+        &lt;div id="DJ PATIL"&gt;
+            &lt;span style="display: block;"&gt;From BinaryBrains&lt;/span&gt;&lt;br&gt;
+            __________________________________
+        &lt;/div&gt;
+        &lt;div class="info-container" id="info-container"&gt;
+
+            &lt;div class="score-timer"&gt;
+                &lt;div id="timer"&gt;Time: 0s&lt;/div&gt;
+                &lt;div id="score"&gt;Score: 0&lt;/div&gt;
+                &lt;div id="level"&gt;Level: 1&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;button id="restart-btn"&gt;Restart&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="level-selection" id="level-selection"&gt;
+            &lt;h2&gt;Select Level&lt;/h2&gt;
+            &lt;button class="level-btn" data-level="1"&gt;Level 1&lt;/button&gt;
+            &lt;button class="level-btn" data-level="2"&gt;Level 2&lt;/button&gt;
+
+        &lt;/div&gt;
+        &lt;div class="game-container" id="game-container"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+        <button onclick="copyCode()">Copy Code</button>
+    </div>
+
+    <script>
+        function copyCode() {
+            const codeSnippet = document.getElementById('code-snippet').innerText;
+            navigator.clipboard.writeText(codeSnippet).then(() => {
+                alert('Code copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
+</body>
+</html>

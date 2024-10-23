@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in width calculations */
+}
+
+body {
+    
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb 30%, #2575fc);
+    color: #fff;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+.container {
+    max-width: 1000px; /* Set a maximum width for larger screens */
+    margin: auto; /* Center the container */
+    padding: 20px;
+    font-size: 15px;
+    background: linear-gradient(to right, #6a11cb 30%, #2575fc);; /* Slightly dark background for readability */
+
+    box-shadow: 0 4px 10px rgba(157, 0, 247, 0.5); 
+}
+
+h1, h2 {
+    text-align: center; /* Center align headings */
+    margin: 10px 0; /* Margin for spacing */
+    
+}
+
+pre {
+    background: linear-gradient(to right, #6a11cb 30%, #2575fc);; /* Dark background for code */
+    padding: 15px; /* Padding for code block */
+
+    overflow: auto; /* Allow scrolling if code is too wide */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Smaller font size for headings */
+    }
+
+    h2 {
+        font-size: 1.4em; /* Smaller font size for subheadings */
+    }
+
+    pre {
+        font-size: 0.9em; /* Smaller font size for code */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    h1 {
+        font-size: 8.2em; /* Medium font size for headings */
+    }
+
+    h2 {
+        font-size: 1.6em; /* Medium font size for subheadings */
+    }
+
+    pre {
+        font-size: 1em; /* Medium font size for code */
+    }
+}
+
+@media (min-width: 901px) {
+    h1 {
+        font-size: 2.5em; /* Larger font size for larger screens */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Larger font size for subheadings */
+    }
+
+    pre {
+        font-size: 1.1em; /* Larger font size for code */
+    }
+}
+
+input {
+    width: calc(80% - 10px);
+    display: block;
+    padding: 15px;
+    margin: 50px auto 0; /* Space between the input fields */
+    border: none;
+
+    background: hsla(0, 100%, 3%, 0.233);
+    color: #fff;
+    font-size: 30px;
+    transition: background 0.3s ease;
+}
+input:nth-of-type(2) {
+    margin-top: 50px; /* Increase space specifically for the password field */
+}
+
+
+input:focus {
+    background: hsla(0, 0%, 0%, 0.302);
+    outline: none;
+}
+
+
+button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background: #ff4757;
+    border: none;
+    color: white;
+    font-size: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 50px auto 0; /* Add top margin for space from the password input */
+}
+
+button:hover {
+    background: #ff6b81;
+}
+
+.error {
+    color: #ff4757;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.folder-container {
+
+    display: grid;
+    
+    grid-template-columns: repeat(center, minmax(150px, 1fr)); /* Adjust number of columns based on space */
+    gap: 20px; /* Space between the folders */
+    justify-items: center; /* Center the folders horizontally */
+}
+
+.folder {
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 15px 20px; /* Adjust padding for text content */
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.folder:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+.folder {
+    background-color: rgba(255, 255, 255, 0.2);
+
+    padding: 25px;
+    margin: 50px;
+    width: calc(78% - 50px);
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.folder a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.folder a:hover {
+    text-decoration: underline;
+}
+
+
+.folder:hover {
+    transform: translateY(-5px);
+}
+
